@@ -47,7 +47,17 @@ body {
     }
   }
 
-  pre {
+  .container {
+    max-height: 600px;
+    overflow: auto;
+  }
+
+  .text {
     font-size: 19px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
   }
 }

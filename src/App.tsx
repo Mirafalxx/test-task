@@ -73,7 +73,9 @@ const ParamEditor: React.FC<IEditorProps> = ({ params, model }) => {
         </div>
       ))}
 
-      <pre>{JSON.stringify(paramValues, null, 2)}</pre>
+      <div className="container">
+        <pre className="text">{JSON.stringify(paramValues, null, 2)}</pre>
+      </div>
     </div>
   );
 };
